@@ -179,10 +179,7 @@ namespace logon_as_batch_job
                     //add the right to the account
                     long res = LsaAddAccountRights(policyHandle, sid, userRights, 1);
                     winErrorCode = LsaNtStatusToWinError(res);
-                    if (winErrorCode != 0)
-                    {
-                        Console.WriteLine("LsaAddAccountRights failed: " + winErrorCode);
-                    }
+                    Console.WriteLine("LsaAddAccountRights return value: " + winErrorCode);
 
                     LsaClose(policyHandle);
                 }
