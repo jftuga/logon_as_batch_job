@@ -20,6 +20,8 @@ namespace logon_as_batch_job
             Console.WriteLine("Usage:");
             Console.WriteLine("{0}.exe DomainName\\UserName", PgmName);
             Console.WriteLine("");
+            Console.WriteLine("This program must be run with the 'Run As Administrator' context.");
+            Console.WriteLine("");
         }
         static void GrantUserLogonAsBatchJob(string userName)
         {
