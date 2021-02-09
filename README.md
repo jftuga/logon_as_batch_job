@@ -15,7 +15,7 @@ logon_as_batch_job.exe DomainName\UserName
 ## Example
 
 ```shell
-C:>logon_as_batch_job.exe myDomain\jftuga
+C:>logon_as_batch_job.exe myDomain\myUserName
 LookupAccountName result = True
 IsValidSid: True
 LookupAccountName domainName: MYDOMAIN
